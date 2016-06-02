@@ -41,7 +41,7 @@ class nodejs(
         elsif $::operatingsystemrelease =~ /^15\.04)$/ {
           validate_re($repo_url_suffix, '^(0\.1[02]|[45]\.x)x$', $suffix_error_msg)
         }
-        elsif $::operatingsystemrelease =~ /^15\.10)$/ {
+        elsif $::operatingsystemrelease =~ /^15\.10$/ {
           validate_re($repo_url_suffix, '^(0\.1[02]|[456]\.x)x$', $suffix_error_msg)
         }
         elsif $::operatingsystemrelease =~ /^1[246]\.04$/ { #LTS
